@@ -1,0 +1,10 @@
+def findMissingNum(n):
+    num = tuple(n)
+    length = len(n)
+    output = []
+    for i in range(0, n[-1],2):
+        if i not in num:
+            output.append(i)
+    return output
+listOfNumbers = [2,4,6,10,12]
+print(findMissingNum(listOfNumbers))
