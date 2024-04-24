@@ -1,0 +1,11 @@
+list1 = [(2,3,1),(4,1,6),(5,2,1)]
+list2 =[]
+for i in list1:
+    list2.append(i[1])
+list2.sort()
+list3 = list()
+for j in list2:
+    for k in list1:
+        if k[1] == j:
+            list3.append(k)
+print('list',list3)
